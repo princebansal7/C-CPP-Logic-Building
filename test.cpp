@@ -14,6 +14,6 @@ int main()
     cout << "hello world this is my program";
     int n;
     cin >> n;
-    cout << n << nl;
+    cout << n;
     return 0;
 }
