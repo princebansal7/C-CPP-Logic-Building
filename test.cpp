@@ -11,6 +11,9 @@ using namespace std;
 
 int main()
 {
-    cout << "hello world this is my--- ";
+    cout << "hello world this is my program";
+    int n;
+    cin >> n;
+    cout << n << nl;
     return 0;
 }
