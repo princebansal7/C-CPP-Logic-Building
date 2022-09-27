@@ -1,9 +1,11 @@
 #include<stdio.h>
 
 int main(){
-    int length = printf("Prince Bansal");
-    printf("\n");  
+    printf("\n\n"); 
+
+    int length = printf("Prince Bansal\n");
     printf("length of \"Prince Bansal\" is %d",length);
-    printf("\n");
+
+    printf("\n\n");
     return 0;
 }
