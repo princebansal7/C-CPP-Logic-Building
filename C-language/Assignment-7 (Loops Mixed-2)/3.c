@@ -15,13 +15,16 @@ int main()
             if (n == sum) {
                 flag = 1;
                 break;
+            } else if (sum > n) {
+                flag = 0;
+                break;
             }
             fTerm = sTerm;
             sTerm = sum;
         }
     }
     if (flag == 1)
-        printf("\n %d exits in Fibinacci series\n", n);
+        printf("\n%d exits in Fibonacci series\n", n);
     else
         printf("\n%d doesn't exits\n", n);
     printf("\n");
