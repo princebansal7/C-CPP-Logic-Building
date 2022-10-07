@@ -9,7 +9,9 @@ int main()
     scanf("%d", &year);
 
     switch (year) {
-        // Yet to do
+    // Yet to do
+    case 1900 ... 3000:
+        printf("%d\n", year);
     }
     return 0;
 }
