@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 // if math.h won't work in your VsCode, use -lm flag in execution command to include libm
-// eg: g++ test.c -lm
+// eg: gcc test.c -lm
 //       or
-//     g++ test.c -o test -lm
+//     gcc test.c -o test -lm
 
 int main()
 {
