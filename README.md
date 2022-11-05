@@ -1,6 +1,6 @@
 # C, C++, OOPs & DSA Learning with programs
 
-### <math.h> in VsCode fixed 
+### 1. <math.h> in VsCode fixed 
 
 - if math.h won't work in your VsCode, use -lm flag in execution command to include libm
      
