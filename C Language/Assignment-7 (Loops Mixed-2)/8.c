@@ -8,7 +8,7 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &a);
 
-    printf("Next prime number from %d is:\n", a);
+    printf("Next prime number from %d is: ", a);
     for (int i = a + 1; i <= a + 100; i++) { // just for safety going till a higher range
         int flag = 1;
         if (i <= 1)

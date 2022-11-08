@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 // Had to make 'function' power as in VSCode math.h pow() function linking couldn't happen
+// (fixed it using -lm flag)
+
 int powr(int ld, int n)
 {
     int ans = 1;

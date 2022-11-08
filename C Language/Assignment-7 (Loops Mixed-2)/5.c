@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// HCF as well as checking Co-Prime
+
 int main()
 {
     int a, b;
