@@ -15,6 +15,6 @@ int main()
 
     int ans = sumOfSquares(n);
 
-    printf("Sum 1st %d Squares numbers is: %d\n", n, ans);
+    printf("Sum of Squares of first %d numbers is: %d\n", n, ans);
     return 0;
 }
