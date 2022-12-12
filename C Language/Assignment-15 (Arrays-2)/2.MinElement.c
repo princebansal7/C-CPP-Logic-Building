@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-int greatest(int* arr, int size)
+int minimum(int arr[], int size)
 {
-    int max = arr[0];
+    int min = arr[0];
     for (int i = 1; i < size; i++) {
-        if (max < arr[i])
-            max = arr[i];
+        if (min > arr[i])
+            min = arr[i];
     }
-    return max;
+    return min;
 }
 
 int main()
 {
     int n;
-    printf("Enter number: ");
+    printf("Enter sizew: ");
     scanf("%d", &n);
 
     int arr[n];
@@ -23,9 +23,9 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int ans = greatest(arr, n);
+    int ans = minimum(arr, n);
 
-    printf("Greatest number is: %d", ans);
+    printf("Minimum number is: %d", ans);
     printf("\n");
     return 0;
 }
