@@ -33,8 +33,8 @@ int main()
     // calculating product of matrices
 
     if (c1 == r2) {
-        for (int i = 0; i < r1; i++) { // traversing matrix 1 rows
-            for (int j = 0; j < c2; j++) { // traversing matrix 2 columns
+        for (int i = 0; i < r1; i++) { // traversing matrix1 rows
+            for (int j = 0; j < c2; j++) { // traversing matrix2 columns
                 int sum = 0;
                 // for traversing rows of matrix1 & cols of matrix2
 
