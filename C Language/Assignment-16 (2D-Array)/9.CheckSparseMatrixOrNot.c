@@ -39,7 +39,7 @@ int main()
         }
     }
 
-    if (cnt < total_elements)
+    if (cnt < (total_elements) / 2)
         printf("Given Matrix is Sparse Matrix\n");
     else
         printf("Not Sparse Matrix\n");
