@@ -1,16 +1,17 @@
 #include <limits.h>
 #include <stdio.h>
 
+int arr[10];
 int main()
 {
     int Min = INT_MAX, secondMin = INT_MAX;
 
-    int arr[10] = { 25, 45, 65, 23, 5, 69, -569, 1, 15, 3 }; // for testing
+    // int arr[10] = { 25, 45, 65, 23, 5, 69, -569, 1, 15, 3 }; // for testing
 
-    // for (int i = 0; i < 10; i++) {
-    //     printf("Enter Elememt %d: ", i + 1);
-    //     scanf("%d", &arr[i]);
-    // }
+    for (int i = 0; i < 10; i++) {
+        printf("Enter Elememt %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
 
     // Two Traversal logic
 
