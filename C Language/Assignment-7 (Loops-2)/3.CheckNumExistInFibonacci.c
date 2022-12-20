@@ -24,9 +24,9 @@ int main()
         }
     }
     if (flag == 1)
-        printf("\n%d exits in Fibonacci series\n", n);
+        printf("\n%d exists in Fibonacci series\n", n);
     else
-        printf("\n%d doesn't exits\n", n);
+        printf("\n%d doesn't exists\n", n);
     printf("\n");
     return 0;
 }

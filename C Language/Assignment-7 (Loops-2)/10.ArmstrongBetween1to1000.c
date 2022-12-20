@@ -14,6 +14,7 @@ int powr(int ld, int n)
 
 int main()
 {
+    printf("\nArmstrong numbers from 1 to 1000\n");
     for (int i = 1; i <= 1000; i++) {
         int temp = i;
         int digits = 0, sum = 0;
