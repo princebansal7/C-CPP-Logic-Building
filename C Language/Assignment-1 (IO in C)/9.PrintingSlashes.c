@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("\\\\");  // printing \\ on screen
+    printf("\\\\"); // a) printing \\ on screen
     printf("\n");
     return 0;
 }
