@@ -19,11 +19,6 @@
         0  5  1
         2  9  0  => total elements = 9
         0  4  3     non zero elements = 6 => Dense matrix
-
-
-
-
-
 */
 
 int mat[3][3];
