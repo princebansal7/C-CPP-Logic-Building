@@ -17,6 +17,7 @@ int power(int x, int y)
 int main()
 {
     int x, y;
+    cout << "Enter 2 Numbers: ";
     cin >> x >> y;
     cout << x << "^" << y << " = " << power(x, y) << nl;
     return 0;
