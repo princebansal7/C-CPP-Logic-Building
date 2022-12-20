@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // TSRS
-float simpleIntrest(int p, int r, int t)
+float simpleInterest(int p, int r, int t)
 {
     return p * r * t / 100;
 }
@@ -11,7 +11,7 @@ int main()
     printf("Enter Principle, Rate, Time: ");
     scanf("%d%d%d", &p, &r, &t);
 
-    float SI = simpleIntrest(p, r, t);
-    printf("Simple Intrest is: %.2f\n", SI);
+    float SI = simpleInterest(p, r, t);
+    printf("Simple Interest is: %.2f\n", SI);
     return 0;
 }
