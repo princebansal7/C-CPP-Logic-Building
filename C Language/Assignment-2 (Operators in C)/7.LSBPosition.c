@@ -9,11 +9,9 @@ int main()
     // Eg: 16 => 10000 (LSB 1 at position 5)
     // Eg: 4  => 00100 (LSB 1 at position 3)
 
-    while (x)
-    {
-        if (x & 1)
-        {
-            printf("position is: %d\n", cnt);
+    while (x) {
+        if (x & 1) {
+            printf("LSB position is: %d\n", cnt);
             break;
         }
         x = x >> 1;
