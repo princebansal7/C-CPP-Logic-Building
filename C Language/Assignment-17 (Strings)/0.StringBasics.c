@@ -32,10 +32,41 @@ int main()
     // gets(str5); // not recommended as doesn't take length
 
     // best way:
-    //  also it takes length as input including 1 byte for null character
+    //  also it takes length as input including 1 byte for 'lien feed' or 'new line' character having ASCII 10
+    //  eg: "prince" => length=6
+    //       but when you take input using fgets()
+    //       length will be 7 i.e, 1 byte extra for '\n'
+    //  NOTE: if you take above input with scanf() => length will be 6 only
     fgets(str5, 20, stdin);
 
     printf("%s \n", str5);
 
+    /*  String Memory Concept:-
+
+            // 1.Character Array (Constant pointer concept)
+            //   Both str1 & str2 will point to different memory location
+            //   but to can't reassign them because they are constant pointers
+            char str1[20] = "Prince";
+            char str2[20] = "Prince";
+
+            printf("%u\n", str1);
+            printf("%u\n", str2);
+
+            // or
+
+            printf("%u\n", &str1[0]);
+            printf("%u\n", &str2[0]);
+
+            // 2. Both pointer a & b will point to same memory location
+            //    but we can reassign them
+
+            char* a = "Prince";
+            char* b = "Prince";
+            printf("%u\n", a);
+            printf("%u\n", b);
+
+            printf("\n");
+
+    */
     return 0;
 }
