@@ -31,11 +31,11 @@ void reverseWords(char str[])
 
 int main()
 {
-    // char str[] = "My name is Prince Bansal";
+    char str[] = "My name is Prince Bansal";
 
-    char str[50];
-    printf("Enter String: ");
-    fgets(str, 50, stdin);
+    // char str[50];
+    // printf("Enter String: ");
+    // fgets(str, 50, stdin);
 
     reverseWords(str);
 
