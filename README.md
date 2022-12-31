@@ -13,5 +13,5 @@
         gcc test.c -o test -lm
 
 - Why **strupr()** and other string functions **not working** even after including **string.h** ?
-  - Functions like strupr, strlwr, strrev, which are available in ANSI C (Turbo C/C++) are not available in standard C (gcc).
-  - So if you are using *GCC complier* then they won't work & you have to make your *own string functions* else you have to use supported compiler or IDE (which includes those compilers, like: **Turbo C/C++, CodeBlocks** etc.     
+  - Functions like *strupr(), strlwr(), strrev()*, which are available in *ANSI C (Turbo C/C++)* are not available in *standard C (GCC)*.
+  - So if you are using *GCC complier* then they won't work & you have to make your *own string functions* else you have to use supported compiler or IDE (which includes those compilers, like: **Turbo C/C++, CodeBlocks** etc.
