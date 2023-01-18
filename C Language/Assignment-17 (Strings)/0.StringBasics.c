@@ -3,13 +3,13 @@
 int main()
 {
     /*
-    // 1. Initialisation
+    // 1. Initialisation--------------
 
     char str1[20] = { 'P', 'r', 'i', 'n', 'c', 'e' }; // Way-1
     char str2[20] = "Prince"; // constant string or string literal
     // '\0' => null character with ASCII code 0
 
-    // 2. How to print string
+    // 2. How to print string----------
 
     char str3[20] = "Prince";
     for (int i = 0; str3[i] != '\0'; i++)
@@ -23,7 +23,7 @@ int main()
     printf("%s \n", str4);
 
 */
-    // 3. How to Input string
+    // 3. How to Input string--------------
 
     char str5[20];
     printf("Enter string: ");
@@ -41,7 +41,7 @@ int main()
 
     printf("%s \n", str5);
 
-    /*  String Memory Concept:-
+    /*  String Memory Concept--------------------------
 
             // 1.Character Array (Constant pointer concept)
             //   Both str1 & str2 will point to different memory location
