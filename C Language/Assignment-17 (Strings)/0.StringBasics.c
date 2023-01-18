@@ -32,10 +32,10 @@ int main()
     // gets(str5); // not recommended as doesn't take length
 
     // best way:
-    //  also it takes length as input including 1 byte for 'lien feed' or 'new line' character having ASCII 10
+    //  also it takes length as input including 1 byte for 'line feed' or 'new line' character having ASCII 10
     //  eg: "prince" => length=6
     //       but when you take input using fgets()
-    //       length will be 7 i.e, 1 byte extra for '\n'
+    //       length will be 7 i.e, 1 byte extra for '\n' as fgets() take '\n' as input too at the end
     //  NOTE: if you take above input with scanf() => length will be 6 only
     fgets(str5, 20, stdin);
 

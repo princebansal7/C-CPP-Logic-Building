@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // IP addresses are of 4 bytes seperated by .
 // eg: 127.33.90.0
@@ -14,6 +15,9 @@
 
 int checkValidIP(char str[])
 {
+    char* p = strtok(str, '.');
+    for (int i = 0; p[i]; i++)
+        printf("%c", p[i]);
 }
 
 int main()
