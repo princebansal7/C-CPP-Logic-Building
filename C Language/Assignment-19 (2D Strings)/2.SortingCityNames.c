@@ -33,7 +33,6 @@ int strComp(char str1[], char str2[])
                 return -1;
             else {
                 ok = 1;
-                continue;
             }
         }
         if (ok)

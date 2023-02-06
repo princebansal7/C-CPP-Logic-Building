@@ -3,6 +3,14 @@
 int main()
 {
 
+    char str[20] = "pcfffrince";
+    char str2[20] = "prbince";
+    // printf("Enter String: ");
+    // fgets(str, 20, stdin);
+
+    printf("%d", strcmp(str, str2));
+    /*
+
     if (__STDC_VERSION__ >= 201710L)
         printf("We are using C18!\n");
     else if (__STDC_VERSION__ >= 201112L)
@@ -11,15 +19,7 @@ int main()
         printf("We are using C99!\n");
     else
         printf("We are using C89/C90!\n");
-    /*
-
     //-----------------------------------------------------
-        char str[20] = "prince";
-
-        printf("Enter String: ");
-        fgets(str, 20, stdin);
-
-        printf("%s", strupr(str));
 
 
     // ----------------------------------------------------
@@ -49,5 +49,6 @@ int main()
            printf("size of \"char pointer\": %ld\n", sizeof(p3)); // 8
            printf("size of \"float pointer\": %ld\n", sizeof(p4)); // 8
        */
+    printf("\n");
     return 0;
 }
