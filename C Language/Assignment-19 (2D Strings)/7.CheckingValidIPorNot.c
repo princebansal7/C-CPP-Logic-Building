@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-// IP addresses are of 4 bytes seperated by .
+// IP addresses are of 4 bytes seperated by . (each byte called octet)
 // eg: 127.33.90.0
-// each byte should be in range from 0-255 (then it will be valid ip)
+// each octet should be in range from 0-255 (then it will be valid ip)
 
 // To solve:
 // 1. Take IP input as string: "127.12.78.77"
-// 2. Then we have to seperate those 4 bytes number (tokenisation): "127" "12" "78" "77"
+// 2. Then we have to seperate those 4 octets number (tokenisation): "127" "12" "78" "77"
 // 3. Convert from string to number: 127 12 78 77
 // 4. Then check whether all 4 lies between 0-255 or not:
 // 0<=127<=255, 0<=12<=255, 0<=78<=255, 0<=77<=255 => valid else not valid
@@ -44,7 +44,7 @@ int main()
 
     printf("\nValid IP address are:\n");
     for (int i = 0; i < n; i++) {
-        char temp[20]; // just for storing invalid string as in function original string will get modified
+        char temp[20]; // just for storing Valid string as in function original string will get modified
         strcpy(temp, str[i]);
         if (checkValidIP(str[i]) == 1)
             printf("%s\n", temp);
