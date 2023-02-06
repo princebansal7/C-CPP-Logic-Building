@@ -13,11 +13,21 @@
 // 0<=127<=255, 0<=12<=255, 0<=78<=255, 0<=77<=255 => valid else not valid
 //---------------------------------------------------------------------------------------
 
-int checkValidIP(char str[])
-{
-    char* p = strtok(str, '.');
-    for (int i = 0; p[i]; i++)
-        printf("%c", p[i]);
+int checkValidIP(char ip[])
+{ // eg: ip "127.53.75.233"
+    char* p = strtok(ip, "."); // p points to string 127
+    int countOctets = 0;
+    while (p != NULL) {
+        int x = atoi(p); // x=127
+        if (x >= 0 && x <= 255) {
+            // printf("%d ", x);
+            countOctets++;
+        }
+        p = strtok(NULL, "."); // p points to 53 and so on till NULL
+    }
+    if (countOctets == 4)
+        return 1; // 1 being true
+    return 0;
 }
 
 int main()
@@ -32,10 +42,13 @@ int main()
     for (int i = 0; i < n; i++)
         scanf("%s", str[i]);
 
-    printf("\nInvalid IP address are:\n");
-    for (int i = 0; i < n; i++)
-        if (checkValidIP(str[i]) == 0)
-            printf("%s\n", str[i]);
+    printf("\nValid IP address are:\n");
+    for (int i = 0; i < n; i++) {
+        char temp[20]; // just for storing invalid string as in function original string will get modified
+        strcpy(temp, str[i]);
+        if (checkValidIP(str[i]) == 1)
+            printf("%s\n", temp);
+    }
 
     printf("\n");
     return 0;

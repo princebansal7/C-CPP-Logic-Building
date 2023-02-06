@@ -44,7 +44,7 @@ int strComp(char str1[], char str2[])
 int main()
 {
     int n;
-    printf("Enter number of Ciities: ");
+    printf("Enter number of Cities: ");
     scanf("%d", &n);
 
     char str[n][20], tempStr[20];
