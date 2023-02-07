@@ -9,12 +9,14 @@
 // 1. Take IP input as string: "127.12.78.77"
 // 2. Then we have to seperate those 4 octets number (tokenisation): "127" "12" "78" "77"
 // 3. Convert from string to number: 127 12 78 77
-// 4. Then check whether all 4 lies between 0-255 or not:
+// 4. Then check whether all 4 lies between 0-255 (inclusive) or not:
 // 0<=127<=255, 0<=12<=255, 0<=78<=255, 0<=77<=255 => valid else not valid
 //---------------------------------------------------------------------------------------
 
 int checkValidIP(char ip[])
-{ // eg: ip "127.53.75.233"
+{
+    // eg: ip "127.53.75.233"
+
     char* p = strtok(ip, "."); // p points to string 127
     int countOctets = 0;
     while (p != NULL) {
@@ -44,9 +46,9 @@ int main()
 
     printf("\nValid IP address are:\n");
     for (int i = 0; i < n; i++) {
-        char temp[20]; // just for storing Valid string as in function original string will get modified
+        char temp[20]; // just for storing the string to print, as in function original string will get modified
         strcpy(temp, str[i]);
-        if (checkValidIP(str[i]) == 1)
+        if (checkValidIP(str[i]))
             printf("%s\n", temp);
     }
 
