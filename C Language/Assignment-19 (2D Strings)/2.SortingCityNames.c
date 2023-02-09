@@ -53,12 +53,13 @@ int main()
     for (int i = 0; i < n; i++)
         scanf("%s", str[i]);
 
+    // Bubble sorting
     for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (strComp(str[i], str[j]) > 0) {
-                strCpy(tempStr, str[i]);
-                strCpy(str[i], str[j]);
-                strcpy(str[j], tempStr);
+        for (int j = 0; j < n - i - 1; j++) {
+            if (strComp(str[j], str[j + 1]) > 0) {
+                strCpy(tempStr, str[j]);
+                strCpy(str[j], str[j + 1]);
+                strcpy(str[j + 1], tempStr);
             }
         }
     }
