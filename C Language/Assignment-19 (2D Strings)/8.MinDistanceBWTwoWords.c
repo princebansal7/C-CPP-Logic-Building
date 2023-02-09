@@ -4,7 +4,7 @@
 
 int main()
 {
-    char list[6][20] = { "prince", "is", "my", "name", "mittal", "bansal" };
+    char list[6][20] = { "prince", "name", "my", "name", "mittal", "bansal" };
     char word1[20], word2[20];
     int pos1 = -1, pos2 = -1, distance = 100;
 
