@@ -61,6 +61,5 @@ int main()
     printf("%s", str);
 
     printf("\n");
-
     return 0;
 }
