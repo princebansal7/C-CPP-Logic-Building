@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// NOTE: for simplicity input string must e lowercase and have only alphabets
+// NOTE: for simplicity input string must be lowercase and have only alphabets
 
 void countVowelsCons(char* ptr)
 {
@@ -17,7 +17,7 @@ void countVowelsCons(char* ptr)
 
 int main()
 {
-    char str[20];
+    char str[30];
     printf("Enter string:\n");
     scanf("%s", str);
 

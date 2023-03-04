@@ -29,7 +29,7 @@ void reverse2(char* arr, int size)
     printf("\n");
 }
 
-// this way we don't have to make seperate fucntion of length
+// this way we don't have to make seperate fucntion for length
 void reverse3(char* str)
 {
     int length = 0;
