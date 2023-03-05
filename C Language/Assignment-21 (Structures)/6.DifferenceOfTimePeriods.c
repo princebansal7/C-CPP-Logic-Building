@@ -20,26 +20,24 @@ struct Time timeDifference1(struct Time t1, struct Time t2)
     return ans;
 }
 
-// Way-2 (wrong)
+// Way-2 (T2 - T1) => T2.hour > T1.hour
 struct Time timeDifference2(struct Time t1, struct Time t2)
 {
     struct Time ans;
-    struct Time diff;
-
-    if (t2.sec > t1.sec) {
-        --t1.min;
-        t1.sec += 60;
+    while (t2.sec < t1.sec) {
+        --t2.min;
+        t2.sec += 60;
     }
 
-    ans.sec = t1.sec - t2.sec;
+    ans.sec = t2.sec - t1.sec;
 
-    if (t2.min > t1.min) {
-        --t1.hour;
-        t1.min += 60;
+    while (t2.min < t1.min) {
+        --t2.hour;
+        t2.min += 60;
     }
 
-    ans.min = t1.min - t2.min;
-    ans.hour = t1.hour - t2.hour;
+    ans.min = t2.min - t1.min;
+    ans.hour = t2.hour - t1.hour;
 
     return ans;
 }
@@ -59,11 +57,11 @@ int main()
     struct Time t = timeDifference2(t1, t2);
 
     printf("\nDifference is:\n");
-    printf("  %2d : %2d : %2d\n", t2.hour, t2.min, t2.sec);
-    printf("- %2d : %2d : %2d\n", t1.hour, t1.min, t1.sec);
-    printf("----------------\n");
-    printf("  %2d : %2d : %2d\n", t.hour, t.min, t.sec);
-    printf("----------------\n");
+    printf("  t2: %2d : %2d : %2d\n", t2.hour, t2.min, t2.sec);
+    printf("- t1: %2d : %2d : %2d\n", t1.hour, t1.min, t1.sec);
+    printf("---------------------\n");
+    printf("      %2d : %2d : %2d\n", t.hour, t.min, t.sec);
+    printf("---------------------\n");
 
     printf("\n");
     return 0;
