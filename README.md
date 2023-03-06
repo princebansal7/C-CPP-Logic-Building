@@ -6,7 +6,7 @@
 - So, open the codes in sequential manner to understand "How to build logics" when making a program.
 
 ### 2. **Fixes:** 
-- **<math.h> in VsCode fixed:** if **math.h** isn't working in your VsCode, use -lm flag in execution command to include libm
+- **<math.h> in VsCode fixed:** if **math.h** isn't working in your VsCode, use -lm flag in execution command to link 'math' library.
      
         gcc test.c -lm
             or
