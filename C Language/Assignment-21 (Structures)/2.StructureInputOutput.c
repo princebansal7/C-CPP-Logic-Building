@@ -42,7 +42,7 @@ void input2(struct Employee* e)
     scanf("%d", &e->id);
     scanf("%lf", &e->salary);
 
-    // way-2
+    // way-2 (Reading input till \n encountered of reaches end of file)
     int c;
     while ((c = getchar()) != '\n' && c != EOF)
         ;
