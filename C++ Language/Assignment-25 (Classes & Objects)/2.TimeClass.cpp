@@ -13,7 +13,7 @@ public:
     // we did data security using setter
     void setTime(int h, int m, int s)
     {
-        // for hour
+        // for hours
         if (h >= 24) {
             hr = h % 24;
         } else if (h >= 0) {
@@ -21,7 +21,7 @@ public:
         } else {
             hr = 0;
         }
-        // for minute
+        // for minutes
         if (m >= 60) {
             hr++;
             min = m % 60;
