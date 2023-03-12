@@ -22,7 +22,12 @@ int nCr(int n, int r)
 
 void PascalTriangle(int n)
 {
+    int space = n;
     for (int i = 0; i <= n; i++) {
+        for (int k = 1; k <= space; k++) {
+            cout << " ";
+        }
+        space--;
         for (int j = 0; j <= i; j++) {
             cout << nCr(i, j) << " ";
         }
