@@ -7,27 +7,44 @@ using namespace std;
 #define nl '\n'
 
 class ReverseNum {
-    int reverseNum;
+    int num = 0;
+    int reverseNum = 0;
 
 public:
-    int reverse(int n)
+    void setN(int n)
     {
-        reverseNum = 0;
+        num = n;
+    }
+    int getN()
+    {
+        return num;
+    }
+    void calReverse()
+    {
+        int ans = 0;
+        int n = getN();
         while (n) {
             int ld = n % 10;
-            reverseNum = ld + reverseNum * 10;
+            ans = ld + ans * 10;
             n = n / 10;
         }
+        reverseNum = ans;
+    }
+    int getReverse()
+    {
         return reverseNum;
     }
 };
 
 int main()
 {
-    ReverseNum obj;
-    cout << "Reverse is: " << obj.reverse(10) << nl;
-    cout << "Reverse is: " << obj.reverse(902) << nl;
-    cout << "Reverse is: " << obj.reverse(121) << nl;
-    cout << "Reverse is: " << obj.reverse(1889002) << nl;
+    ReverseNum obj1, obj2;
+    obj1.setN(283);
+    obj1.calReverse();
+    cout << "Reverse of " << obj1.getN() << " is: " << obj1.getReverse() << nl;
+
+    obj2.setN(28300700);
+    obj2.calReverse();
+    cout << "Reverse of " << obj2.getN() << " is: " << obj2.getReverse() << nl;
     return 0;
 }

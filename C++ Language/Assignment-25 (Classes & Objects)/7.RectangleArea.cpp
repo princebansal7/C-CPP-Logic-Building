@@ -20,7 +20,12 @@ public:
             return;
         }
     }
-    float area()
+    void showValue()
+    {
+        cout << "Length is: " << length << nl;
+        cout << "Breadth is: " << breadth << nl;
+    }
+    float calArea()
     {
         return length * breadth;
     }
@@ -30,12 +35,15 @@ int main()
 {
     Rectangle obj;
     obj.setValue(11, 23);
-    cout << obj.area() << nl;
+    obj.showValue();
+    cout << "Area is: " << obj.calArea() << nl << nl;
 
     obj.setValue(10.1, 20.44);
-    cout << obj.area() << nl;
+    obj.showValue();
+    cout << "Area is: " << obj.calArea() << nl << nl;
 
     obj.setValue(10.3, 20.89);
-    cout << obj.area() << nl;
+    obj.showValue();
+    cout << "Area is: " << obj.calArea() << nl << nl;
     return 0;
 }

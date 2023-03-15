@@ -10,7 +10,7 @@ class Circle {
     float radius;
 
 public:
-    void setValue(float r)
+    void setRadius(float r)
     {
         if (r > 0) {
             radius = r;
@@ -19,7 +19,12 @@ public:
             return;
         }
     }
-    float area()
+    void showRadius()
+    {
+        cout << "R=" << radius << nl;
+    }
+
+    float calArea()
     {
         return 3.14 * radius * radius;
     }
@@ -28,13 +33,16 @@ public:
 int main()
 {
     Circle obj;
-    obj.setValue(11);
-    cout << obj.area() << nl;
+    obj.setRadius(11);
+    obj.showRadius();
+    cout << "Area is: " << obj.calArea() << nl << nl;
 
-    obj.setValue(5.5);
-    cout << obj.area() << nl;
+    obj.setRadius(5.5);
+    obj.showRadius();
+    cout << "Area is: " << obj.calArea() << nl << nl;
 
-    obj.setValue(10.3);
-    cout << obj.area() << nl;
+    obj.setRadius(10.3);
+    obj.showRadius();
+    cout << "Area is: " << obj.calArea() << nl << nl;
     return 0;
 }
