@@ -6,7 +6,7 @@
 using namespace std;
 #define nl '\n'
 
-// Overloading implemented
+// Overloading implemented (Early Binding happens according to rules)
 
 class Area {
 public:
