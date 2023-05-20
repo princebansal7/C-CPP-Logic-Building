@@ -21,6 +21,7 @@ public:
         real = r;
         imag = i;
     }
+    // member functions
 
     void setData(int r, int i)
     {
