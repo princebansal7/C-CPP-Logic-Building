@@ -29,8 +29,8 @@ int main()
     printf("Before Swapping:\n");
     printf("str1= \'%s\' str2= \'%s\' ", str1, str2);
 
-    // swap1(str1, str2);
-    swap2(&str1, &str2);
+    swap1(str1, str2);
+    // swap2(&str1, &str2);
 
     printf("\nAfter Swapping:\n");
     printf("str1= \'%s\' str2= \'%s\' ", str1, str2);

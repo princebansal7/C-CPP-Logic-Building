@@ -45,7 +45,7 @@ public:
         x.imag = temp.imag + imag;
         return x;
     }
-    Complex operator+(Complex& temp)
+    Complex operator+(Complex& temp) // operator overloading
     {
         Complex x;
         x.real = temp.real + real;
