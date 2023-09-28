@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-void printNfibonacci(int n)
+// 0 1 1 2 3 5 8 13 21 34 55 89 144....
+
+void printNfibonacciSeries(int n)
 {
     int fTerm = 0, sTerm = 1;
     if (n == 1)
@@ -26,7 +28,7 @@ int main()
     printf("Enter number: ");
     scanf("%d", &n);
 
-    printNfibonacci(n);
+    printNfibonacciSeries(n);
 
     return 0;
 }
