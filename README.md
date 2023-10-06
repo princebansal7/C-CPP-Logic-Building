@@ -5,7 +5,7 @@
 - To strengthen the basics of mentioned languages & Concepts I have implemented all the programs from 0 to advanced level.
 - So, open the codes in sequential manner to understand "How to build logics" when making a program.
 
-#### 2. VsCode code runner extension setting so that it automatically removes binary files like: `.exe` or `.out`
+#### 2. VsCode code runner extension setting to automatically removes binary files like: `.exe` or `.out`
 
   - for Windows
     ```JSON
