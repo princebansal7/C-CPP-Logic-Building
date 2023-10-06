@@ -8,6 +8,7 @@
 #### 2. VsCode code runner extension setting to automatically removes binary files like: `.exe` or `.out`
 
   - for Windows
+
     ```JSON
     "code-runner.executorMap": {
       "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $fileNameWithoutExt.exe && del $fileNameWithoutExt.exe",
@@ -15,13 +16,15 @@
     },
     ```
   - for Mac/Linux
+   
     ```JSON
     "code-runner.executorMap": {
       "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
       "cpp":"cd $dir && g++ $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt && rm ./$fileNameWithoutExt",
     },
     ```
-    PS: You can customize as per your own need, my personalized configuration:
+    Note: You can customize as per your own need, my personalized configuration:
+    
     ```JSON
     "code-runner.executorMap": {
       "java": "cd $dir && javac $fileName && java $fileNameWithoutExt && rm $fileNameWithoutExt.class",
@@ -34,7 +37,8 @@
 ### 3. **Fixes:** 
 
 - **`<math.h>` in VsCode fixed:** if **math.h** isn't working in your VsCode, use -lm flag in execution command to link 'math' library.
-     ```
+    
+     ```bash
         gcc test.c -lm
             or
         gcc test.c -o test -lm
