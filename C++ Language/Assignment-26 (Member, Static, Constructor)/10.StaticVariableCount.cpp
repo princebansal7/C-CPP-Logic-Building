@@ -6,8 +6,8 @@
 using namespace std;
 #define nl '\n'
 
-// This way counter will increase everytime we create a new object
-// Static member variables shares memory with all the object and not doesn't gets created seperately for each object
+// Static member variables doesn't depend on Objects of class
+// Hence, we can simply access & modify them just using class name
 
 class StaticCount {
     static int counter; // declaring static variable
