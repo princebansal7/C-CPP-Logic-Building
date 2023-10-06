@@ -1,6 +1,6 @@
 # C, C++, OOPs & DSA Learning with programs
 
-### 1. Why Should you checkout this Repository ?
+### 1. Why this Repository ?
 
 - To strengthen the basics of **C/C++** languages & Concepts. I have implemented all the programs from 0 to advanced level.
 - So, go through the files in sequential manner to understand *"How to build logics"*.
