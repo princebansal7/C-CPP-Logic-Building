@@ -13,7 +13,7 @@ private:
 public:
     // As not making default constructor explicitly , use default arguments
 
-    Cube(int l = 0, int b = 0, int h = 0)
+    Box(int l = 0, int b = 0, int h = 0)
     {
         length = l;
         breadth = b;
@@ -77,6 +77,16 @@ int main()
     b1.setLength(2);
     b1.setBreadth(3);
     b1.setHeight(5);
+    b1.showDimensions();
+    cout << "Length, Breadth and Height is: " << b1.getLength() << "," << b1.getBreadth() << " & " << b1.getHeight() << nl;
+    cout << "Volume of b1: " << b1.getVolume() << nl << nl;
+    Box b2;
+    b2.setDimensions(4, 6, 3);
+    cout << "Volume of b2: " << b2.getVolume() << nl << nl;
+
+    Box b3(10, 30, 2);
+    b3.showDimensions();
+    cout << "Volume of b3: " << b3.getVolume() << nl << nl;
 
     return 0;
 }
