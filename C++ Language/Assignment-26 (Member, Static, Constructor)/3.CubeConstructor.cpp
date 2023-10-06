@@ -11,9 +11,19 @@ private:
     int side;
 
 public:
-    Cube(int x)
+    // As not making default constructor explicitly , use default arguments
+    Cube(int x = 0)
     {
         side = x;
+    }
+    void setSide(int a)
+    {
+        side = a;
+    }
+
+    int getSide()
+    {
+        return side;
     }
 
     int getVolume()
@@ -24,8 +34,10 @@ public:
 
 int main()
 {
-    Cube c1(3), c2(5);
+    Cube c1(3), c2;
     cout << "Volume is Cube 1 is: " << c1.getVolume() << nl;
+    c2.setSide(7);
+    cout << "side of Cube 2 is: " << c2.getSide() << nl;
     cout << "Volume is Cube 2 is: " << c2.getVolume() << nl;
     return 0;
 }
