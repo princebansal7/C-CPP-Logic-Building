@@ -23,7 +23,7 @@
       "cpp":"cd $dir && g++ $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt && rm ./$fileNameWithoutExt",
     },
     ```
-    Note: You can customize as per your own need, my personalized configuration:
+    Note: You can customize these settings as per your own need, my personalized configuration is:
     
     ```JSON
     "code-runner.executorMap": {
