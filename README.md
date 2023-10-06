@@ -2,7 +2,7 @@
 
 ### 1. Why this Repository ?
 
-- To strengthen the basics of **C/C++** languages & Concepts. I have implemented all the programs from 0 to advanced level.
+- To strengthen the basics of **C/C++** language concepts. I have implemented all the programs from 0 to advanced level.
 - So, go through the files in sequential manner to understand *"How to build logics"*.
 
 #### 2. VsCode code runner extension setting to automatically removes binary files like: `.exe` or `.out`
