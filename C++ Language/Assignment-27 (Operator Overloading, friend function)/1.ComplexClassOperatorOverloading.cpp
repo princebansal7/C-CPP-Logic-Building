@@ -139,7 +139,7 @@ int main()
     sum.getComplexNum();
 
     Complex x(10, 20), y(5, 9);
-    Complex sub = x - y;
+    Complex sub = x - y; // Here operator -  is working as binary operator (as x object calls it and passes y object as argument => has '1 argument')
     cout << "Subtraction is: ";
     sub.getComplexNum();
 
@@ -150,7 +150,7 @@ int main()
 
     Complex num1(6, 9);
     num1.getComplexNum();
-    c2 = -num1; // here, num1 object calls instance operator - with 0 arguments and returns object which gets stored in c2 object
+    c2 = -num1; // here, operator - is working as unary operator as num1 object calls instance operator - with '0 arguments' and returns object which gets stored in c2 object
     c2.getComplexNum();
 
     return 0;
