@@ -90,6 +90,15 @@ public:
         ans.imag = (real * a.imag + imag * a.real);
         return ans;
     }
+
+    // Unary operator (-) overloaded:
+    Complex operator-()
+    {
+        Complex ans;
+        ans.real = -real;
+        ans.imag = -imag;
+        return ans;
+    }
 };
 
 int main()
@@ -138,6 +147,11 @@ int main()
     Complex prod = n1 * n2;
     cout << "Multiplication is: ";
     prod.getComplexNum();
+
+    Complex num1(6, 9);
+    num1.getComplexNum();
+    c2 = -num1; // here, num1 object calls instance operator - with 0 arguments and returns object which gets stored in c2 object
+    c2.getComplexNum();
 
     return 0;
 }
