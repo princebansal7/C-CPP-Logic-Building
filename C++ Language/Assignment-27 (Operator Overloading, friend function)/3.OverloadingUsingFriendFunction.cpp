@@ -54,7 +54,10 @@ public:
     // => meaning of operator+ call is now changed as now it's not an member function
     friend Complex operator+(Complex, Complex);
 
-    // Declaring operator- as a friend (making unary operator as friend)
+    // Declaring binary operator -
+    friend Complex operator-(Complex, Complex);
+
+    // 2.Declaring operator- as a friend (making unary operator as friend)
     friend Complex operator-(Complex);
 };
 
@@ -75,6 +78,15 @@ Complex operator+(Complex x, Complex y)
     Complex ans;
     ans.real = x.real + y.real;
     ans.imag = x.imag + y.imag;
+    return ans;
+}
+
+// Defining binary operator -
+Complex operator-(Complex x, Complex y)
+{
+    Complex ans;
+    ans.real = x.real - y.real;
+    ans.imag = x.imag - y.imag;
     return ans;
 }
 
@@ -105,6 +117,10 @@ int main()
 
     c2 = -c1; // - operator is called and c1 object is passed as argument (That's how making method as friend changes the meaning of function call)
     c2.getComplexNum();
+
+    Complex sub = c2 - c1; // -operator is called and c1, c2 objects are being passed as arguments (Tha's how...........)
+    cout << "Subtraction is: ";
+    sub.getComplexNum();
 
     return 0;
 }
