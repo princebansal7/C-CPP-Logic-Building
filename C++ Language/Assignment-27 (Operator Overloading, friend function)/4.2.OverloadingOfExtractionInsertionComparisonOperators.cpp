@@ -7,14 +7,14 @@ using namespace std;
         We know:
         int x;
         cin >> x; (here, cin object calls extraction operator where 'reference' of variable x is passed)
-                  (Why reference ? => That's the reason who defined insertion operator is able to modify variable's value)
+                  (Why reference ? => That's the reason who defined extraction operator is able to modify variable's value)
 
         Now when we do:-
             cin >> t1; // ERROR (as Extraction operator (>>) is not overloaded to take Custom objects as input)
                 =>  Here, cin object of istream class is calling extraction operator which takes t1 object as argument
 
 
-            cout << t1; // ERROR (as Insertion operator (<<) is not overloaded to take Custom objects as input)
+            cout << t1; // ERROR (as Insertion operator (<<) is not overloaded to take Custom objects as output)
                 =>  Here, cout object of ostream class is calling insertion operator which takes t1 object as argument
 
         How to Fix ?
