@@ -49,10 +49,13 @@ public:
             cout << real << " - " << (-imag) << "i" << nl;
     }
 
-    // Declaring operator+ as a friend (making binary operator as friend)
-    // => now operator+ must not be instance member
+    // 1.Declaring operator+ as a friend (making binary operator as friend)
+    // => now operator+ must not be instance member as it's a friend fxn
     // => meaning of operator+ call is now changed as now it's not an member function
     friend Complex operator+(Complex, Complex);
+
+    // Declaring operator- as a friend (making unary operator as friend)
+    friend Complex operator-(Complex);
 };
 
 // Defining friend function outside of class to which it is friend
@@ -75,6 +78,15 @@ Complex operator+(Complex x, Complex y)
     return ans;
 }
 
+// Defining unary operator- using friend fxn concept
+Complex operator-(Complex x)
+{
+    Complex ans;
+    ans.real = -x.real;
+    ans.imag = -x.imag;
+    return ans;
+}
+
 int main()
 {
     Complex c1;
@@ -87,9 +99,12 @@ int main()
     Complex c2(2, 3);
     c2.getComplexNum();
 
-    Complex sum = c1 + c2; // + operator is called and c1, c2 objects are being passed as arguments
+    Complex sum = c1 + c2; // + operator is called and c1, c2 objects are being passed as arguments (That's how making method as friend changes the meaning of function call)
     cout << "Sum is: ";
     sum.getComplexNum();
+
+    c2 = -c1; // - operator is called and c1 object is passed as argument (That's how making method as friend changes the meaning of function call)
+    c2.getComplexNum();
 
     return 0;
 }
