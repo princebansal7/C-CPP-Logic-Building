@@ -46,11 +46,7 @@ int main()
     s2.getString();
 
     CString s3 = s1 + s2;
-<<<<<<< HEAD
     cout << "After concatenation s1 and s2 string: ";
-=======
-    cout << "After concatination s1 and s2 string: ";
->>>>>>> master
     s3.getString();
 
     return 0;
