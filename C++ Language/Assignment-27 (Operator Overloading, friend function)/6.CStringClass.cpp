@@ -25,12 +25,12 @@ public:
         cout << str << nl;
     }
 
-    // Defining custom + operator to concatinate C style strings
+    // Defining custom + operator to concatenate C style strings
     CString operator+(CString S2)
     {
         CString ans;
         strcpy(ans.str, str); // copying data of s1 (caller) to temporary ans string
-        strcat(ans.str, S2.str); // concatinating passed argument (s2 string) with new string and returning the result
+        strcat(ans.str, S2.str); // concatenating passed argument (s2 string) with new string and returning the result
         return ans;
     }
 };
@@ -46,7 +46,7 @@ int main()
     s2.getString();
 
     CString s3 = s1 + s2;
-    cout << "After concatination s1 and s2 string: ";
+    cout << "After concatenation s1 and s2 string: ";
     s3.getString();
 
     return 0;
