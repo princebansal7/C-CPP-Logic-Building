@@ -44,6 +44,6 @@
         gcc test.c -o test -lm
      ```
 - Alternatively use **`<cmath>`** header file in **C++** programs then you won't need -lm flag.
-- Use `<cstring>` to use C style pre-defined string methods like: `strupr()`, `strcpy()`, `strcat()` etc in C++ programs.
+- Use `<cstring>` to use C style pre-defined string functions like: `strupr()`, `strcpy()`, `strcat()` etc in C++ programs.
 - `cout` is object of `ostream` class, and `<<` is **Insertion operator**.
 - `cin` is object of `istream` class, and `>>` is **Extraction operator**.
