@@ -95,7 +95,9 @@ public:
 
     bool operator==(Time T)
     {
-        if (hours == T.hours && minutes == T.minutes && seconds == T.seconds)
+        int seconds1 = hours * 3600 + minutes * 60 + seconds;
+        int seconds2 = T.hours * 3600 + T.minutes * 60 + T.seconds;
+        if (seconds1 == seconds2)
             return true;
         return false;
     }
