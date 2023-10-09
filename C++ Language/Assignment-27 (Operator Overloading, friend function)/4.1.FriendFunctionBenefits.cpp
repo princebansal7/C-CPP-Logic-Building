@@ -94,9 +94,9 @@ int main()
 
     // But what if?
     // c2 = 5 + c1; // now 5 is calling operator + ?? => No, that's wrong
-    // In this can operator + is called and 2 arguments (int and Complex type [Order of arguments]) is passed
+    // In this operator + is called and 2 arguments (int and Complex type [Order of arguments matters]) is passed
     // How can we fix this issue ?
-    // we need to access Complex class member (private too) and also need the make the operator + call work
+    // we need to access Complex class member (private too) and also need to make the operator + function call work.
     // => Friend function comes to rescue !!!
 
     c2 = 5 + c1;
