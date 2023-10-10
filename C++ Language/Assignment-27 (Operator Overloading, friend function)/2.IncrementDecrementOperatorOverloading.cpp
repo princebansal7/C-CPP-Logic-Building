@@ -58,7 +58,7 @@ public:
         return ans;
     }
 
-    // // Overloads the prefix ++ and --
+    // // Overloading the pre increment and decrement
     // void operator++()
     // {
     //     (this->real)++;
@@ -71,7 +71,7 @@ public:
     //     (this->imag)--;
     // }
 
-    // // Overloads the postfix ++ and -- (specifying int as argument lets compiler differentiate that postfix one's is called)
+    // // Overloading the post increment and decrement (specifying int as argument lets compiler differentiate that postfix one's is called)
     // void operator++(int)
     // {
     //     (this->real)++;
@@ -84,7 +84,7 @@ public:
     //     (this->imag)--;
     // }
 
-    // Prefix ++ operator overloaded
+    // Pre ++ operator overloaded
     Complex& operator++()
     {
         this->real++;
@@ -92,7 +92,7 @@ public:
         return *this; // Return a reference to the modified object
     }
 
-    // Prefix -- operator overloaded
+    // Pre -- operator overloaded
     Complex& operator--()
     {
         this->real--;
@@ -100,7 +100,7 @@ public:
         return *this; // Return a reference to the modified object
     }
 
-    // Postfix ++ operator overloaded
+    // Post ++ operator overloaded
     Complex operator++(int)
     {
         Complex old = *this; // Create a copy of the current object
@@ -109,7 +109,7 @@ public:
         return old; // Return the old value
     }
 
-    // Postfix -- operator overloaded
+    // Post -- operator overloaded
     Complex operator--(int)
     {
         Complex old = *this; // Create a copy of the current object
@@ -127,24 +127,24 @@ int main()
     cout << "c1 Before:" << endl;
     c1.getComplexNum();
 
-    ++c1; // Prefix increment
-    cout << "c1 After Prefix Increment:" << endl;
+    ++c1; // Pre-increment
+    cout << "c1 After Pre-Increment:" << endl;
     c1.getComplexNum();
 
-    --c1; // Prefix decrement
-    cout << "c1 After Prefix Decrement:" << endl;
+    --c1; // Pre-decrement
+    cout << "c1 After Pre-Decrement:" << endl;
     c1.getComplexNum();
 
     Complex c2(2, 3);
     cout << "c2 Before:" << endl;
     c2.getComplexNum();
 
-    c2++; // Postfix increment
-    cout << "c2 After Postfix Increment:" << endl;
+    c2++; // Post-increment
+    cout << "c2 After Post-Increment:" << endl;
     c2.getComplexNum();
 
-    c2--; // Postfix decrement
-    cout << "c2 After Postfix Decrement:" << endl;
+    c2--; // Post-decrement
+    cout << "c2 After Post-Decrement:" << endl;
     c2.getComplexNum();
 
     return 0;
