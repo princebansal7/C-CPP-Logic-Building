@@ -26,22 +26,16 @@ public:
         cout << str << nl;
     }
 
-    // Defining custom + operator to concatenate C style strings
-    CString operator+(CString S2)
-    {
-        CString ans;
-        strcpy(ans.str, str); // copying data of s1 (caller) to temporary ans string
-        strcat(ans.str, S2.str); // concatenating passed argument (s2 string) with new string and returning the result
-        return ans;
-    }
+    // Declaring operator+
+    CString operator+(CString);
 
     // Comparing C style strings
-    bool operator==(CString S2)
+    bool operator==(CString& S2)
     {
         //    bool ans = (str == S2.str); // don't do these, it compares base addresses of s1 and s2 strings
         int i = 0;
         while (str[i] != '\0') {
-            cout << str[i] << " " << S2.str[i] << nl;
+            // cout << str[i] << " " << S2.str[i] << nl;
             if (str[i] != S2.str[i])
                 return false;
             i++;
@@ -49,6 +43,18 @@ public:
         return true;
     }
 };
+
+// Defining custom + operator to concatenate C style strings
+// (Defining ouside the class, just for fun)
+// Syntax:
+// returnType ClassName :: functionName(args..){...}
+CString CString::operator+(CString S2)
+{
+    CString ans;
+    strcpy(ans.str, str); // copying data of s1 (caller) to temporary ans string
+    strcat(ans.str, S2.str); // concatenating passed argument (s2 string) with new string and returning the result
+    return ans;
+}
 
 int main()
 {
