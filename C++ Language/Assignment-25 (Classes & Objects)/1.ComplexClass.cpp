@@ -42,7 +42,9 @@ public:
     void showComplexNum(); // declaring
 };
 
-// defining member function outside the class
+// Defining member function outside the class
+// Syntax:
+// returnType ClassName :: functionName(args..){...}
 
 void Complex::showComplexNum()
 {
