@@ -151,6 +151,7 @@ int main()
     Complex num1(6, 9);
     num1.getComplexNum();
     c2 = -num1; // here, operator - is working as unary operator as num1 object calls instance operator - with '0 arguments' and returns object which gets stored in c2 object
+    // c2 = num1.operator-(); // Way-2 to write above line
     c2.getComplexNum();
 
     return 0;

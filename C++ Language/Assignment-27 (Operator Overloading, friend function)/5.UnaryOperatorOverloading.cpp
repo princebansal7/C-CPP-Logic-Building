@@ -46,7 +46,8 @@ int main()
     t1.setTriplets(2, -69, 7);
     t1.getTriplets();
 
-    Triplet t2 = -t1;
+    Triplet t2 = -t1; // t1 object calls unary operator - with 0 arguments
+    // t2 = t1.operator-(); // way 2 of writing above line
     t2.getTriplets();
 
     return 0;
