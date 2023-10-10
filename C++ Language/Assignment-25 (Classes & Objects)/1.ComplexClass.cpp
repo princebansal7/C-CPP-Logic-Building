@@ -7,9 +7,13 @@ using namespace std;
 #define nl '\n'
 
 class Complex {
-    int real, imag;
+
+    int real;
+    int imag; // if we want to decalre it outside the class, we can't
 
 public:
+    // instance member functions/methods:
+    // setters
     void setReal(int r)
     {
         real = r;
@@ -18,6 +22,8 @@ public:
     {
         imag = i;
     }
+
+    // getters
     void showReal()
     {
         cout << "Real number: " << real << nl;
@@ -26,11 +32,22 @@ public:
     {
         cout << "Imaginary number: " << imag << nl;
     }
-    void showComplexNum()
-    {
-        cout << "Complex number: " << real << " + " << imag << "i" << nl;
-    }
+
+    // if we want to define member functions or operators outside the class ? 1st declare them inside the class the define outside using proper syntax
+    // void showComplexNum()
+    // {
+    //     cout << "Complex number: " << real << " + " << imag << "i" << nl;
+    // }
+
+    void showComplexNum(); // declaring
 };
+
+// defining member function outside the class
+
+void Complex::showComplexNum()
+{
+    cout << "Complex number: " << real << " + " << imag << "i" << nl;
+}
 
 int main()
 {
