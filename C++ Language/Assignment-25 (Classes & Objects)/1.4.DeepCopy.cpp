@@ -65,7 +65,7 @@ int main()
     Triplet p1; // calls default constructor
     p1.setTriplet(3, 4, 69);
     p1.showTriplet(); // Keep an eye on p1's ptr address
-    Triplet p2 = p1; // 'Copy constructor' invoked for p2 obeject and takes p1 object as argument (does Deep copy)
+    Triplet p2 = p1; // 'Copy constructor' invoked for p2 object and takes p1 object as argument (does Deep copy)
     p2.showTriplet(); // will show different address from p1's ptr
 
     // This time program will terminate fine without any issues
