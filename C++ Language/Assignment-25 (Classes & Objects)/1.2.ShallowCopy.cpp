@@ -5,6 +5,7 @@
 #include <iostream>
 using namespace std;
 #define nl '\n'
+
 // if we don't make any constructor explicitly:
 // => Compiler will automatically creates the following:
 //    1. Default constructor
