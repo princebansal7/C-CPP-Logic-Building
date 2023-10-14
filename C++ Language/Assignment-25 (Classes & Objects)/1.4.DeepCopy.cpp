@@ -20,13 +20,13 @@ Visually (Deep copy):
 
 */
 
-class Pair {
+class Triplet {
 
     int a, b;
     int* ptr;
 
 public:
-    Pair()
+    Triplet()
     {
         a = 0;
         b = 0;
@@ -34,27 +34,27 @@ public:
     }
 
     // Custom copy constructor so that it does 'Deep Copy'
-    Pair(Pair& P)
+    Triplet(Triplet& P)
     {
         a = P.a;
         b = P.b;
         ptr = new int; // created new memory block
         *ptr = *(P.ptr); // copies the value of p1's ptr memory block (not the address) into p2's object memory block
     }
-    void setPair(int a, int b, int val)
+    void setTriplet(int a, int b, int val)
     {
         this->a = a;
         this->b = b;
         *ptr = val;
     }
-    void showPair()
+    void showTriplet()
     {
         cout << "a = " << a << " b = " << b << nl;
         cout << " (value) *ptr = " << *ptr << nl;
         cout << " (Address) ptr = " << ptr << nl;
     }
 
-    ~Pair()
+    ~Triplet()
     {
         delete ptr;
     }
@@ -62,11 +62,11 @@ public:
 
 int main()
 {
-    Pair p1; // calls default constructor
-    p1.setPair(3, 4, 69);
-    p1.showPair(); // Keep an eye on p1's ptr address
-    Pair p2 = p1; // 'Copy constructor' invoked for p2 obeject and takes p1 object as argument (does Deep copy)
-    p2.showPair(); // will show different address from p1's ptr
+    Triplet p1; // calls default constructor
+    p1.setTriplet(3, 4, 69);
+    p1.showTriplet(); // Keep an eye on p1's ptr address
+    Triplet p2 = p1; // 'Copy constructor' invoked for p2 obeject and takes p1 object as argument (does Deep copy)
+    p2.showTriplet(); // will show different address from p1's ptr
 
     // This time program will terminate fine without any issues
 
