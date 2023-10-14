@@ -6,17 +6,29 @@
 using namespace std;
 #define nl '\n'
 
-// if we don't make any constructor explicitly:
-// => Compiler will automatically creates the following:
-//    1. Default constructor
-//    2. Copy constructor (it does Shallow copy too)
-//    3. Overloaded assignment operator (It does shallow copy)
-//    4. Destructor
-// => if we create Default constructor => compiler just creates Copy Constructor
-// => if we create Copy constructor => compiler doesn't create any constructor
+/*
 
-// In below example I will create constructor just like compiler would've create we doesn't
-// (To show how shallow copy happens)
+if we don't make any constructor explicitly:
+=> Compiler will automatically creates the following:
+   1. Default constructor
+   2. Copy constructor (it does Shallow copy too)
+   3. Overloaded assignment operator (It does shallow copy)
+   4. Destructor
+=> if we create Default constructor => compiler just creates Copy Constructor
+=> if we create Copy constructor => compiler doesn't create any constructor
+
+In below example I will create copy constructor just like compiler would've created if we doesn't
+(To show how shallow copy happens)
+
+Visually (Shallow copy):
+
+       p1:                                    p2:
+          a: 3                                  a: 3
+          b: 4                                  b: 4
+          ptr -------->  69  <----------------- ptr
+
+
+*/
 
 class Pair {
 
@@ -59,14 +71,14 @@ public:
 int main()
 {
     Pair p1; // calls default constructor
-    p1.setPair(6, 9, 69);
+    p1.setPair(3, 4, 69);
     p1.showPair(); // Keep an eye on p1's ptr address
-    Pair p2 = p1; // 'Copy constructor' invoked, beacuse assigning values during declaration and just copies the corresponding values of varibles of p1 object into p2
+    Pair p2 = p1; // 'Copy constructor' invoked, beacuse assigning values during declaration and which just copies the corresponding values of varibles of p1 object into p2
     p2.showPair(); // will show same address like p1's ptr
 
     // When programs is about it terminate => p1 and p2 scope ends => destructor gets invoked
-    // first p1's destructor frees that blocks memory to which p1's ptr was poiting (no issue)
-    // now, when destructor invokes for p2's ptr => tries to release again the same memory doesn't exists for the program
+    // first p1's destructor frees that blocks memory to which p1's ptr was poiting (no issues yet)
+    // now, when destructor invokes for p2 => tries to release the same memory again (to which p2's ptr poiting), which doesn't exists for the program
     // => Unwanted termination of Program
 
     return 0;
@@ -93,7 +105,7 @@ What is the problem in this ?
         => now other member pointer variables beacomes Dangling pointer
 
 
-    // => That's why in such cases we do 'Deep Copy':
-    //    Usually when we have to explicitly make copy constructor => we usually do deep copy
-    // Example in next code file: 1.4.DeepCopy.cpp
+    => That's why in such cases we do 'Deep Copy':
+       Usually when we have to explicitly make copy constructor => we do deep copy
+       Example in next code file: 1.4.DeepCopy.cpp
 */

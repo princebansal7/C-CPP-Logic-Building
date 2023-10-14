@@ -35,11 +35,11 @@ int main()
     Pair p1; // calls default constructor
     p1.setPair(6, 9);
     p1.showPair();
-    Pair p2 = p1; // 'Copy constructor' invoked, beacuse assigning values during declaration and just copies the corresponding values of varibles of p1 object into p2 (implicitly made by compiler)
+    Pair p2 = p1; // 'Copy constructor' invoked, beacuse assigning values during declaration and it just copies the corresponding values of variables of p1 object into p2 (implicitly made by compiler)
     p2.showPair();
 
     Pair p3;
-    p3 = p1; // Implicitly overloaded 'Assignment operator' gets invoked => it also just copies the corresponding varibales values of p2 into p1
+    p3 = p1; // Implicitly overloaded 'Assignment operator' gets invoked => it also just copies the corresponding variables values of p2 into p1
     p3.showPair();
 
     return 0;
