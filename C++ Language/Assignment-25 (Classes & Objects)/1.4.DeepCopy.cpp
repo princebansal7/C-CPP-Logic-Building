@@ -5,6 +5,20 @@
 #include <iostream>
 using namespace std;
 #define nl '\n'
+/*
+    What is Deep Copy ?
+
+     => In simple terms, When we want to copy object's member pointers value as well as we want to create new memeory block
+        for the new object's member pointer variables for which copy constrctor gets invoked
+
+Visually (Deep copy):
+
+       p1:                                    p2:
+          a: 3                                  a: 3
+          b: 4                                  b: 4
+          ptr -------->  69                     ptr ----------------> 69
+
+*/
 
 class Pair {
 
@@ -49,7 +63,7 @@ public:
 int main()
 {
     Pair p1; // calls default constructor
-    p1.setPair(6, 9, 69);
+    p1.setPair(3, 4, 69);
     p1.showPair(); // Keep an eye on p1's ptr address
     Pair p2 = p1; // 'Copy constructor' invoked, which does Deep copy
     p2.showPair(); // will show different address from p1's ptr
