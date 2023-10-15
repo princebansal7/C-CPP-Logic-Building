@@ -15,6 +15,7 @@ public:
 
     // 'this' is a local object pointer in every instance member function (=> Obviously inside Constructors & destructors too)
     // => it contains caller object's reference.
+
     Complex(int real = 0, int imag = 0)
     {
         this->real = real;
