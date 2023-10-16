@@ -27,6 +27,7 @@ public:
         this->real = real;
         this->imag = imag;
     }
+
     void getComplexNum()
     {
         // this->real == real (as same as c1.real == this->real )
