@@ -49,6 +49,7 @@ int main()
     // cout << a[3] << nl; // without doing overloading of [] operator, it won't work
 
     // We will do overloading such that it also checks for Out of Bound case (unlike C,C++ subscript operator which doesn't check out of bound case)
+
     cout << a[3] << nl; // object a calls [] operator with int value as argument and it returns int value as result
 
     cout << a[103] << nl;
