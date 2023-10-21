@@ -34,7 +34,7 @@ public:
 
     // With this: call cascading isn't possible
 
-    // void operator=(Complex& X)
+    // void operator=(Complex X)
     // {
     //     this->real = X.real;
     //     this->imag = X.imag;
