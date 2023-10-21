@@ -34,7 +34,7 @@ public:
 
     // With this: call cascading isn't possible
 
-    // void operator=(Complex X)
+    // void operator=(Complex &X)
     // {
     //     this->real = X.real;
     //     this->imag = X.imag;
@@ -57,7 +57,7 @@ int main()
     c1.getComplexNum();
 
     Complex c2, c3;
-    c3 = c2 = c1; // c2 calls assignment operator with c1 as argument
+    c3 = c2 = c1; // c2 calls assignment operator with c1 as argument then c3 calls it with returned result as an argument
     c2.getComplexNum();
     c3.getComplexNum();
 
