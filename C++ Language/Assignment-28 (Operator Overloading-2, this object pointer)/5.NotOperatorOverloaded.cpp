@@ -15,6 +15,7 @@ cout << a; // 0
 */
 
 // We are making our not operator such that it returns -value
+
 class Integer {
     int value;
 
