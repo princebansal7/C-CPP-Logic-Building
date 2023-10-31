@@ -11,6 +11,7 @@ class Complex {
 
 public:
     // Constructor
+
     Complex(int real = 0, int imag = 0)
     {
         this->real = real;
