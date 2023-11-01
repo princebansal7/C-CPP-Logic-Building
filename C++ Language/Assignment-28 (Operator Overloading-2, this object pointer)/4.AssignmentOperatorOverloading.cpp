@@ -33,7 +33,7 @@ public:
             cout << real << " - " << (-imag) << "i" << nl;
     }
 
-    // With this: call cascading isn't possible
+    // With this: call cascading isn't possible.
 
     // void operator=(Complex &X)
     // {
