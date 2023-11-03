@@ -55,7 +55,7 @@ int main()
     Integer i2;
 
     // !i1 returns the negated int (primitive) value which is getting assigned to i1 object (non-primitive)
-    // => how ? because we made a constructor which takes int argument, without it will give error
+    // => how ? because we made a constructor which takes int argument, without it will give error.
 
     i2 = !i1;
     cout << i2.getValue() << nl;
