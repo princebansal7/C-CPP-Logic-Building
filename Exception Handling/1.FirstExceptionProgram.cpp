@@ -21,7 +21,7 @@ int main()
     } catch (const char* s) {
         cout << s << nl;
     } catch (...) {
-        cout << "Default Exception" << nl;
+        cout << "Default Exception!" << nl;
     }
     cout << "Result: " << res << nl;
     return 0;
