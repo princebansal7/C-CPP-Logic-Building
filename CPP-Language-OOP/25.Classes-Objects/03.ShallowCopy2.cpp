@@ -73,12 +73,12 @@ int main()
     Pair p1; // calls default constructor
     p1.setPair(3, 4, 69);
     p1.showPair(); // Keep an eye on p1's ptr address
-    Pair p2 = p1; // 'Copy constructor' invoked, beacuse assigning values during declaration and which just copies the corresponding values of varibles of p1 object into p2
+    Pair p2 = p1; // 'Copy constructor' invoked, because assigning values during declaration and which just copies the corresponding values of variables of p1 object into p2
     p2.showPair(); // will show same address like p1's ptr
 
     // When programs is about it terminate => p1 and p2 scope ends => destructor gets invoked
-    // first p1's destructor frees that blocks memory to which p1's ptr was poiting (no issues yet)
-    // now, when destructor invokes for p2 => tries to release the same memory again (to which p2's ptr poiting), which doesn't exists for the program
+    // first p1's destructor frees that blocks memory to which p1's ptr was pointing (no issues yet)
+    // now, when destructor invokes for p2 => tries to release the same memory again (to which p2's ptr pointing), which doesn't exists for the program
     // => Unwanted termination of Program
 
     return 0;
