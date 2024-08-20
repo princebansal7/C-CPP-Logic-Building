@@ -1,11 +1,21 @@
 # C, C++, OOPs & DSA Learning with programs
 
-### 1. Why this Repository ?
+#### 1. Why this Repository ?
 
-- To strengthen the basics of **C/C++** language concepts. I have implemented all the programs from 0 to advanced level.
-- So, go through the files in sequential manner to understand *"How to build logics"*.
+- To strengthen the basics of **C, C++ & Object oriented paradigms** concepts.
+- Follow sequential manner to get the gist of *"How to build logics"*
 
-#### 2. VsCode **Code-Runner** extension settings to automatically removes binary files like: `.exe` or `.out`
+#### 2. Additional Links
+
+- DSA using Object Oriented Paradigms (OOP) & concepts | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/DSA-Object-Oriented-Style)
+- TCS NQT Sheet (Great for basic logic building) | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/TCS-NQT-Sheet)
+- 180 SDE Sheet | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/180-SDE-Sheet)
+- 450 Sheet | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/450-DSA-Sheet)
+- A2Z Sheet | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/A2Z-Sheet)
+- CodeHelp YT | [Link](https://github.com/princebansal7/DSA-Sheets-Code/tree/main/Codehelp-Youtube)
+- DSA Complete Repo | [Link](https://github.com/princebansal7/DSA-Sheets-Code)
+
+#### 3. VsCode **Code-Runner** extension settings to automatically removes binary files like: `.exe` or `.out`
 
   - for Windows
 
@@ -34,7 +44,7 @@
     },
     ```
 
-### 3. **Fixes & Things worth knowing:** 
+#### 4. **Fixes & Things worth knowing:** 
 
 - **`<math.h>` in VsCode fixed:** if **math.h** isn't working in your VsCode, use -lm flag in execution command to link 'math' library.
     
