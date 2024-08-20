@@ -1,4 +1,4 @@
-# C, C++, OOPs & DSA Learning with programs
+# Learn C, C++, OOP & DSA
 
 #### 1. Why this Repository ?
 
