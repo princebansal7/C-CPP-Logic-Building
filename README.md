@@ -4,6 +4,8 @@
 
 - To strengthen the basics of **C, C++ & Object oriented paradigms** concepts.
 - Follow sequential manner to get the gist of *"How to build logics"*
+- C Language | [Link](https://github.com/princebansal7/C-CPP-Logic-Building/tree/main/C-Language)
+- C++ Language with Object Oriented Concepts | [Link](https://github.com/princebansal7/C-CPP-Logic-Building/tree/main/CPP-Language-OOP)
 
 #### 2. Additional Links
 
